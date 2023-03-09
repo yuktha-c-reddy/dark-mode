@@ -47,7 +47,7 @@ input:checked + label:after {
     height: 100vh;
     background-image: url("https://img.freepik.com/free-photo/relax-woman-jumping-sea-beach_1249-528.jpg?size=626&ext=jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     position: absolute;
     transition: 0.5s;
     z-index: -1;
