@@ -1,0 +1,62 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0%;
+    display: flex;
+}
+label{
+    width: 250px;
+    height: 100px;
+    background-color: rgb(242, 244, 246);
+    display: block;
+    position: relative;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+label:after{
+    content: "";
+    width:100px;
+    height: 100px;
+    left: 0px;
+    top: 1px;
+    border-radius: 100px;
+    background-color: rgb(253, 224, 57);
+    position: absolute;
+    transition: 0.3s;
+}
+input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+input:checked + label{
+    background-color: rgb(66, 62, 62);
+}
+input:checked + label:after {
+    left:250px;
+    background-color: black;
+    transform: translateX(-100%);
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/relax-woman-jumping-sea-beach_1249-528.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+input:checked + label + .background{
+    background-image: url("https://img.freepik.com/free-photo/island-sea-against-moonlit-sky_1048-14252.jpg?size=626&ext=jpg&ga=GA1.2.281830837.1678369594&semt=sph");
+}
+
+@media (max-width:480px){
+    
+}
